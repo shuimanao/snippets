@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+@keyframes animate-heart {
+    0%,
+    100% {
+        transform: scale(1)
+    }
+    
+    50% {
+        transform: scale(1.5)
+    }
+}
+
+.fa-heart {
+    color: red;
+    animation-name: animate-heart;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

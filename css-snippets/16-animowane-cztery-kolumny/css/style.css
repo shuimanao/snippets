@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+.column-1-4 {
+	height: 100vh;
+	width: 25%;
+	display: inline-block;
+	float: left;
+	transition: all 0.5s linear;
+	
+}
+
+.background {
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	width: 200%;
+	background-repeat: no-repeat;
+	
+}
+
+.column-1-4:hover {
+	width: 40%;
+
+}
+
+.container:hover .column-1-4:not(:hover) {
+	width: 20%;
+	
+}
+
+
+.column-1-4:last-child {
+	position: absolute;
+	right: 0;
+}
+
+#background-1 {
+	background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg);
+}
+
+#background-2 {
+	background-image: url(https://cdn.pixabay.com/photo/2017/06/06/06/03/freezing-earth-2376303_960_720.jpg);
+}
+
+#background-3 {
+	background-image: url(https://cdn.pixabay.com/photo/2017/04/10/15/07/japan-2218788_960_720.jpg);
+}
+
+
+#background-4 {
+	background-image: url(https://cdn.pixabay.com/photo/2017/06/15/10/25/summer-2404769_960_720.jpg);
+}

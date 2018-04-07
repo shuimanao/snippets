@@ -1,0 +1,39 @@
+.box {
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.box:hover > .front {
+    transform: rotateY(180deg);
+}
+
+.box:hover > .back {
+    transform: rotateY(0deg);
+}
+
+.square {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s;
+
+}
+
+.front {
+    background-color: orange;
+    z-index: 10;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color: skyblue;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+

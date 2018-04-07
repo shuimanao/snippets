@@ -1,0 +1,25 @@
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label::before {
+    display: inline-block;
+    content: "";
+    margin-right: 10px;
+    border: 2px solid #000;
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox] + label::after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    display: none;
+}
+
+input[type=checkbox]:checked + label::after {
+    display: inline-block;
+}
